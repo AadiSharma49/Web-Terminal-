@@ -21,7 +21,7 @@ Available commands:
 - weather: Show simulated weather info`;
 
     case "clear":
-      return "\u001b[H\u001b[2J"; // Clears terminal
+      return "__CLEAR__"; // Special identifier for clearing
 
     case "about":
       return "This is a web-based terminal built with Next.js!";

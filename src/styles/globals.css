@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default Light Mode */
+:root {
+  --background: white;
+  --foreground: black;
+}
+
+/* Dark Mode */
+.dark {
+  --background: black;
+  --foreground: #00ff00;
+}
+
+/* Apply to body */
+html {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: monospace;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}

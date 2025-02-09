@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## **Web Terminal**  
 
-## Getting Started
+A fully responsive **web-based terminal** built using **Next.js**. It supports various commands like `help`, `clear`, `echo`, and more, providing an interactive CLI experience on the web.  
 
-First, run the development server:
+[Web Terminal](https://web-terminal-eosin.vercel.app/)  
 
+---
+
+## **🚀 Features**  
+
+✅ **Fully Responsive** – Works on all screen sizes, including mobile and tablets  
+✅ **Dark/Light Mode** – Easily switch between themes  
+✅ **Custom Commands** – Execute commands like `time`, `date`, `echo`, etc.  
+✅ **Loading Screen** – Displays a loading page when first opened  
+✅ **Local Storage Support** – Remembers theme preferences  
+
+---
+
+## **📌 Commands List**  
+
+| Command   | Description                              |
+|-----------|------------------------------------------|
+| `help`    | Show all available commands             |
+| `clear`   | Clear the terminal screen               |
+| `about`   | Display information about this project  |
+| `time`    | Show the current time                   |
+| `date`    | Show today's date                       |
+| `whoami`  | Display user info                       |
+| `echo`    | Print a message                         |
+| `ascii`   | Display ASCII art                       |
+| `uptime`  | Show system uptime                      |
+| `random`  | Generate a random number                |
+| `reverse` | Reverse a given string                  |
+| `calc`    | Perform basic arithmetic calculations   |
+| `weather` | Show simulated weather info             |
+
+---
+
+## **📦 Installation & Setup**  
+
+1️⃣ **Clone the Repository**  
+```bash
+git clone https://github.com/AadiSharma49/Web-Terminal-.git
+cd Web-Terminal-
+```
+
+2️⃣ **Install Dependencies**  
+```bash
+npm install
+# or
+yarn install
+```
+
+3️⃣ **Run the Development Server**  
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+🚀 Your web terminal will be running at **http://localhost:3000**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## **🎨 Theming**  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- By default, the terminal opens in **dark mode** 🌙  
+- You can switch to **light mode** ☀️ using the toggle button  
+- Theme preference is saved in **localStorage**  
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## **🛠 Built With**  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Next.js** – React framework for server-side rendering  
+- **Tailwind CSS** – Utility-first styling for responsive design  
+- **TypeScript** – Ensuring type safety  
+- **LocalStorage API** – To save user preferences  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## **🐜 License**  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is open-source and available under the **MIT License**.  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## **💡 Future Improvements**  
+
+✅ More interactive commands (file system simulation, history tracking)  
+✅ Customizable themes and fonts  
+✅ Integration with real APIs for weather and system info  
+
+---
+
+## **💌 Contact & Contribution**  
+
+🔗 **GitHub**: [AadiSharma49](https://github.com/AadiSharma49)  
+💡 Want to contribute? Feel free to submit a **pull request**!  
+

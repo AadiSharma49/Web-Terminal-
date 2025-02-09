@@ -3,11 +3,13 @@ import React, { useState, useEffect, useRef } from "react";
 import { executeCommand } from "@/utils/commands";
 
 const Terminal: React.FC = () => {
-  const [input, setInput] = useState("");
-  const [output, setOutput] = useState<string[]>([
+  const WELCOME_MESSAGE = [
     "Welcome to the Web Terminal!",
-    "Type 'help' to see available commands.",
-  ]);
+    "Type 'help' to see available commands...",
+  ];
+
+  const [input, setInput] = useState("");
+  const [output, setOutput] = useState<string[]>([...WELCOME_MESSAGE]);
   const [history, setHistory] = useState<string[]>([]);
   const [historyIndex, setHistoryIndex] = useState<number | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -21,7 +23,13 @@ const Terminal: React.FC = () => {
       e.preventDefault();
       if (input.trim()) {
         const result = executeCommand(input);
-        setOutput((prev) => [...prev, `$ ${input}`, result]);
+
+        if (result === "__CLEAR__") {
+          setOutput([...WELCOME_MESSAGE]); // Clears only user commands, keeps the welcome message
+        } else {
+          setOutput((prev) => [...prev, `$ ${input}`, result]);
+        }
+
         setHistory((prev) => [...prev, input]);
         setHistoryIndex(null);
         setInput("");
@@ -44,7 +52,7 @@ const Terminal: React.FC = () => {
   };
 
   return (
-    <div className="w-full h-screen flex flex-col p-4 text-green-400 font-mono">
+    <div className="w-full h-screen flex flex-col p-4 text-green-400 font-mono bg-black">
       <div className="flex-grow overflow-auto">
         {output.map((line, index) => (
           <p key={index} className="whitespace-pre-wrap">{line}</p>

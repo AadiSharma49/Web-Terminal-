@@ -9,11 +9,8 @@ A fully responsive **web-based terminal** built using **Next.js**. It supports v
 ## **🚀 Features**  
 
 ✅ **Fully Responsive** – Works on all screen sizes, including mobile and tablets  
-✅ **Dark/Light Mode** – Easily switch between themes  
 ✅ **Custom Commands** – Execute commands like `time`, `date`, `echo`, etc.  
 ✅ **Loading Screen** – Displays a loading page when first opened  
-✅ **Local Storage Support** – Remembers theme preferences  
-
 ---
 
 ## **📌 Commands List**  
